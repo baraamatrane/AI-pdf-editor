@@ -6,6 +6,7 @@ import Image from "next/image";
 import Bg from "@/public/pdfform-banner-picture.png";
 import { SignUpButton, useUser } from "@clerk/nextjs";
 import Navbar from "./_navbar/navbar";
+import Drag from "@/components/Drag";
 
 export default function Home() {
   const { user, isLoaded } = useUser();
@@ -31,12 +32,7 @@ export default function Home() {
           </Button>
         </Link>
       )}
-      <Image
-        src={Bg}
-        alt="Chat with PDFs Illustration"
-        width={600}
-        height={400}
-      />
+      <Drag />
     </div>
   );
 }
