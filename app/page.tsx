@@ -32,7 +32,7 @@ export default function Home() {
           </Button>
         </Link>
       )}
-      <Drag />
+      <Drag user={user} />
     </div>
   );
 }
