@@ -1,13 +1,8 @@
 import Chatpage from "@/components/Chat";
-import Sidebar from "@/components/Sidebar";
+import Mainchat from "@/components/Mainchat";
 
 function Chat() {
-  return (
-    <div className="relative bg-gradient-to-br from-blue-100 to-white h-screen w-full">
-      <Sidebar />
-      <Chatpage />
-    </div>
-  );
+  return <Mainchat />;
 }
 
 export default Chat;
